@@ -16,6 +16,16 @@
                                             $this->load->view($isi);
                                         }
                                         ?>
+
+                                    <div id='map' style='width: 100%; height: 300px;'></div>
+                                    <script>
+                                    mapboxgl.accessToken = 'pk.eyJ1Ijoic2hpa3NoaW5lbGYiLCJhIjoiY2p5Y3lxb202MG12djNkazQxNnUwbjM3NCJ9.h7Seoet9AWgLJ7K95GTeew';
+                                    var map = new mapboxgl.Map({
+                                        container: 'map',
+                                        style: 'mapbox://styles/mapbox/streets-v11'
+                                    });
+                                    </script>
+
                                 </div>
                             </div>
 
